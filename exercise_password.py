@@ -3,8 +3,9 @@ def password():
     Ejercicio 10 - Validador de Contraseña
 
     Leer una contraseña mediante input(). Validar que cumpla con los siguientes requisitos:
-    1. Debe tener al menos 8 caracteres de longitud
-    2. Debe contener al menos un número (usar el operador in para verificar cada dígito del 0 al 9)
+    
+Debe tener al menos 8 caracteres de longitud
+Debe contener al menos un número (usar el operador in para verificar cada dígito del 0 al 9)
 
     Si cumple ambos requisitos, imprimir "Contraseña valida".
     Si no cumple, imprimir cuál requisito falta.
@@ -23,4 +24,12 @@ def password():
         Contraseña muy corta
         Debe contener un numero
     """
-    pass
+    contraseña = input()
+    numero = ("0" in contraseña or "1" in contraseña or "2" in contraseña or "3" in contraseña or "4" in contraseña or "5" in contraseña or "6" in contraseña or "7" in contraseña or "8" in contraseña or "9" in contraseña)
+    if len(contraseña) >= 8 and numero:
+        print("Contraseña valida")
+    else:
+        if len(contraseña) < 8:
+            print("Contraseña muy corta")
+        if not numero:
+            print("Debe contener un numero")
