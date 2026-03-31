@@ -19,3 +19,16 @@ def grades():
         Insuficiente
     """
     pass
+    nota=int(input())
+    mensaje_1= "Excelente"
+    mensaje_2 = "Bueno"
+    mensaje_3 = "Regular"
+    mensaje_4 = "Insuficiente"
+    if nota >= 9 and nota <= 10:
+        print(mensaje_1)
+    if nota >= 7 and nota <= 8:
+        print(mensaje_2)
+    if nota >= 5 and nota <= 6:
+        print(mensaje_3)
+    if nota >= 0 and nota <= 4:
+        print(mensaje_4)
